@@ -5,9 +5,15 @@
 
 def palindrome?(str)
   # YOUR CODE HERE
+  a = str.downcase.gsub(/\W/)
+  a == a.reverse
 end
 
 def count_words(str)
+
+array = Hash.new(0)
+
+
   # Create result hash (key value pair)
   result = Hash.new
   total = 0
