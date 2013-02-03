@@ -9,6 +9,13 @@ def palindrome?(str)
 end
 
 def count_words(str)
+  word_array = str.downcase.split(/\W/)
+  result = Hash.new(0)
+  word_array.each { |x| result[x] =+ 1}
+  puts result
+end
+
+def count_words_old(str)
   # Create result hash (key value pair)
   result = Hash.new
   total = 0
