@@ -4,6 +4,7 @@
 
 
 def palindrome?(str)
+<<<<<<< HEAD
   a = str.gsub(/\W/,"").downcase
   a == a.reverse 
 end
@@ -16,6 +17,18 @@ def count_words(str)
 end
 
 def count_words_old(str)
+=======
+  # YOUR CODE HERE
+  a = str.downcase.gsub(/\W/)
+  a == a.reverse
+end
+
+def count_words(str)
+
+array = Hash.new(0)
+
+
+>>>>>>> 01e555a7f8790c406271e5165d288aefd0318dfd
   # Create result hash (key value pair)
   result = Hash.new
   total = 0
