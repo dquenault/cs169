@@ -4,7 +4,8 @@
 
 
 def palindrome?(str)
-  # YOUR CODE HERE
+  a = str.gsub(/\W/,"").downcase
+  a == a.reverse 
 end
 
 def count_words(str)
@@ -44,9 +45,11 @@ end
 test_str = "Madam, I'm Adam"
 
 if palindrome? test_str
-  puts test_str " is a palindrome!"
+	p "blah blah blaa"
+#  puts test_str " is a palindrome!"
 else
-  #puts test_str " is NOT a palindrome!"
+   puts " Not a palindrome"
+#  puts test_str " is NOT a palindrome!"
 end
 
 
@@ -59,4 +62,3 @@ count_words("A man, a plan, a canal -- Panama")
     # => {'a' => 3, 'man' => 1, 'canal' => 1, 'panama' => 1, 'plan' => 1}
 count_words "Doo bee doo bee doo"
     # => {'doo' => 3, 'bee' => 2}
-
