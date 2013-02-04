@@ -35,6 +35,6 @@ class JellyBean < Dessert
 end
 
 # Test
-a = Dessert.new("Creme Brulee",300)
-if a.delicious?
+a = Dessert.new("Creme Brulee",100)
+puts a.delicious?
 puts a.healthy?
