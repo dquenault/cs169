@@ -1,14 +1,12 @@
-
 def palindrome?(str)
   a = str.gsub(/\W/,"").downcase
   a == a.reverse 
 end
 
 def count_words(str)
-  word_array = str.downcase.split(/\W/)
   result = Hash.new(0)
-  word_array.each { |x| result[x] += 1}
-  p result
+  str.downcase.split(/\W/).word_array.each { |word| result[word] += 1}
+  return result
 end
 
 test_str = "there goes the neighborhood"
